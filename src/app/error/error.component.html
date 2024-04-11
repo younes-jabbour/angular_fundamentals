@@ -1,0 +1,5 @@
+<div class="p-3 container" *ngIf="appState.productState.status === 'error'">
+    <div class="alert  alert-danger ">
+        <p>{{appState.productState.errorMessage.message | json}}</p>
+    </div>
+</div>

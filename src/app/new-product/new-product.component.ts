@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {ProductService} from "../services/product.service";
 import {Product} from "../model/product.model";
+import { AppStateService } from '../services/app-state.service';
 
 @Component({
   selector: 'app-new-product',
@@ -13,7 +14,7 @@ export class NewProductComponent implements OnInit {
   public productForm!: FormGroup;
   public keyword: any;
 
-  constructor(private formBuilder: FormBuilder, private productService: ProductService) {
+  constructor(private formBuilder: FormBuilder, private productService: ProductService, public appState: AppStateService) {
   }
 
   ngOnInit() {
@@ -33,7 +34,10 @@ export class NewProductComponent implements OnInit {
         alert(JSON.stringify(product));
       },
       error: (err) => {
-        alert('Error: ' + JSON.stringify(err))
+      this.appState.setProductState({
+        error:"error",
+        errorMessage: err,
+      })
       }
     });
   }

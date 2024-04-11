@@ -1,34 +1,22 @@
 {
   "product": [
     {
-      "id": "1",
-      "name": "PC",
-      "price": 3000,
-      "checked": false
-    },
-    {
       "id": "2",
       "name": "souris",
       "price": 2000,
-      "checked": false
+      "checked": true
     },
     {
       "id": "3",
       "name": "clavier",
       "price": 1500,
-      "checked": false
-    },
-    {
-      "id": "4",
-      "name": "imprimante",
-      "price": 5000,
-      "checked": false
+      "checked": true
     },
     {
       "id": "5",
       "name": "smart phone",
       "price": 7000,
-      "checked": false
+      "checked": true
     },
     {
       "id": "6",
@@ -40,12 +28,6 @@
       "id": "7",
       "name": "disque dur externe",
       "price": 2500,
-      "checked": false
-    },
-    {
-      "id": "8",
-      "name": "casque audio",
-      "price": 1500,
       "checked": false
     },
     {
@@ -136,25 +118,25 @@
       "id": "23",
       "name": "brosse à dents électrique",
       "price": 500,
-      "checked": false
+      "checked": true
     },
     {
       "id": "24",
       "name": "rasoir électrique",
       "price": 400,
-      "checked": false
+      "checked": true
     },
     {
       "id": "25",
       "name": "parapluie",
       "price": 100,
-      "checked": false
+      "checked": true
     },
     {
       "id": "26",
       "name": "porte-clés",
       "price": 50,
-      "checked": false
+      "checked": true
     },
     {
       "id": "27",
@@ -163,22 +145,28 @@
       "checked": false
     },
     {
-      "id": "28",
-      "name": "étui pour téléphone",
-      "price": 300,
-      "checked": false
-    },
-    {
-      "id": "29",
-      "name": "stylo",
-      "price": 10,
-      "checked": false
-    },
-    {
       "id": "30",
       "name": "carnet",
       "price": 20,
       "checked": false
+    },
+    {
+      "name": "appah",
+      "price": "100",
+      "checked": true,
+      "id": "MM-bqp_"
+    },
+    {
+      "name": "testappah",
+      "price": "10",
+      "checked": true,
+      "id": "B-9Pybb"
+    },
+    {
+      "name": "aa",
+      "price": 0,
+      "checked": true,
+      "id": "I41OHOI"
     }
   ]
 }
